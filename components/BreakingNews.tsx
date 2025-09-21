@@ -22,7 +22,7 @@ const BreakingNews = ({newsList}: Props) => {
     const scrollX = useSharedValue(0);
     const ref = useAnimatedRef<Animated.FlatList<any>>();
     const [isAutoPlay, setIsAutoPlay] = useState(true);
-    const interval = useRef<NodeJS.Timeout>();
+    const interval = useRef<number | null>(null);
     const offset = useSharedValue(0);
     const {width} = useWindowDimensions();
 

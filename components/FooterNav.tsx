@@ -2,6 +2,7 @@ import { View, Text, Pressable } from "react-native"
 import React from "react"
 import { Link, useRouter, useSegments } from "expo-router"
 
+
 const FooterNav = () => {
   const router = useRouter()
 
